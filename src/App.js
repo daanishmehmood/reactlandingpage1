@@ -52,55 +52,57 @@ function App() {
 <nav className="navbar bg-body-tertiary py-3">
   <div className="container">
     <a className="navbar-brand" href='/'><img src={logo} alt="" /></a>
-      <button className="btn user-btn fs-13 fw-600" type="submit">Login/Sign Up</button>
+      <button className="btn user-btn fs-13 fw-600 mt-sm-2 " type="submit">Login/Sign Up</button>
   </div>
 </nav>
 {/* <hr /> */}
 <main>
      <div className="container group-section">
-      <h1 className='mt-3 text-center mt-5'>Join <span className='fs-italic text-primary'>group</span> or 1:1 sessions near you for fitness and sports training</h1>
-      <div className="catagories my-5">
+      <h1 className='text-center mt-md-5 d-none d-md-block'>Join <span className='fs-italic text-primary '>group</span> or 1:1 sessions near you for fitness and sports training</h1>
+      <h3 className='my-4 text-center d-block d-sm-block d-md-none fs-22 fw-700'>Find affordable <span className='fs-italic text-primary'>services</span> in your area</h3>
+      <div className="catagories my-md-5 my-sm-3">
         <ul className='pl-0'>
           <li>
             <a href="/" 
             className={` ${activeButton === 'btn-1' ? 'active' : ''}`}
             onClick={() => handleClick('btn-1')}
-            ><span><img src={list} alt="" /></span>All</a>
+            ><span><img src={list} alt="" /></span><span className='d-none d-md-block'>All</span></a>
             <a href="/" 
                className={`${activeButton === 'btn-2' ? 'active' : ''}`}
         onClick={() => handleClick('btn-2')}
-            ><span><img src={training} alt="" /></span>Personal Training</a>
+            ><span><img src={training} alt="" /></span><span className='d-none d-md-block'>Personal Training</span></a>
             <a href="/"
             className={`${activeButton === 'btn-3' ? 'active' : ''}`}
             onClick={() => handleClick('btn-3')}
-            ><span><img src={Pilates} alt="" /></span>Pilates</a>
+            ><span><img src={Pilates} alt="" /></span><span className='d-none d-md-block'>Pilates</span></a>
             <a href="/"
             className={`${activeButton === 'btn-4' ? 'active' : ''}`}
             onClick={() => handleClick('btn-4')}
-            ><span><img src={Sports} alt="" /></span>Sports</a>
+            ><span><img src={Sports} alt="" /></span><span className='d-none d-md-block'>Sports</span></a>
             <a href="/" 
             className={`${activeButton === 'btn-5' ? 'active' : ''}`}
             onClick={() => handleClick('btn-5')}
-            ><span><img src={Weight} alt="" /></span>Weight Training</a>
+            ><span><img src={Weight} alt="" /></span><span className='d-none d-md-block'>Weight</span></a>
             <a href="/"
             className={`${activeButton === 'btn-6' ? 'active' : ''}`}
             onClick={() => handleClick('btn-6')}
-            ><span><img src={Yoga} alt="" /></span>Yoga</a>
+            ><span><img src={Yoga} alt="" /></span><span className='d-none d-md-block'>Yoga</span></a>
             <a href="/" 
             className={`${activeButton === 'btn-7' ? 'active' : ''}`}
             onClick={() => handleClick('btn-7')}
-            ><span><img src={Martial} alt="" /></span>Martial Arts</a>
+            ><span><img src={Martial} alt="" /></span><span className='d-none d-md-block'>Martial Arts</span></a>
             <a href="/"
             className={`${activeButton === 'btn-8' ? 'active' : ''}`}
             onClick={() => handleClick('btn-8')}
-            ><span><img src={Swimming} alt="" /></span>Swimming</a>
+            ><span><img src={Swimming} alt="" /></span><span className='d-none d-md-block'>Swimming</span></a>
 
           </li>
         </ul>
       </div>
      </div>
      <div className="container">
-          <div className="search-section position-relative search-key-input gap-md-3 gap-1 my-4 mx-auto d-flex align-items-center flex-wrap">
+         <div className="d-none d-md-block">
+         <div className="search-section position-relative search-key-input gap-md-3 gap-1 my-4 mx-auto d-flex align-items-center flex-wrap ">
           <input type="search" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add your location"/>
           <div className="date-time-section d-flex fc fs-17 fw-500">
           <div className='protector'></div>
@@ -110,9 +112,27 @@ function App() {
           <div className='protector ml-5'></div><img className='mr-2 fc ' src={clock} alt="" />Time</div>
                <button className="btn search-btn my-2 my-sm-0" type="submit"><img className='mr-2' src={search} alt="" />Search</button>
         </div>
+         </div>
+         <div className="d-block d-sm-block d-md-none">
+         <div className="search-section position-relative search-key-input gap-md-3 gap-1 my-4 mx-auto d-flex align-items-center flex-wrap ">
+          <input type="search" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add your location"/>
+        
+        
+               <button className="btn search-btn my-2 my-sm-0" type="submit"><img className='mr-2' src={search} alt="" />Search</button>
+        </div>
+      <div className="d-flex justify-content-around date-time-sm">
+      <div className="date-time-section d-flex fc fs-17 fw-500">
+          <img className='mr-2' src={calender} alt="" />Any date
+        </div>
+        <div className='protector'></div>
+
+        <div className="date-time-section d-flex fc fs-17 fw-500">
+          <img className='mr-2 fc ' src={clock} alt="" />Time</div>
+      </div>
+         </div>
         
      <p className='text-center'>Save money by splitting costs with others for group fitness and sports training</p>
-     <h3 className='text-center my-5 fs-30 fw-700'>How splitMart works</h3>
+     <h2 className='text-center my-5 fs-30 fw-700'>How splitMart works</h2>
      <div className="row">
       <div className="col-lg-6">
         <div className="coaching-center">

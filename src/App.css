@@ -115,6 +115,7 @@ body {
   font-weight: 400;
   border-radius: 30px;
   padding: 10px 23px;
+  box-shadow: none;
 }
 .user-btn:hover{
   background-color:#222222 ;
@@ -263,7 +264,7 @@ ul li {
   text-align: center;
 }
 .protector{
-  width: 1px;
+  width: 2px;
     height: 30px;
     background: #a0a3bd;
     margin-right: 20px;
@@ -397,8 +398,46 @@ footer ul li a:hover {
   color: #717171;
   border-radius: 20px;
 }
+.date-time-sm{
+  border: 1px solid #d9dbe9;
+  padding: 10px 0;
+  margin: 16px 0;
+  width: 100%;
+  border-radius: 8px;
+}
 
+@media (max-width: 555px) {
+  .navbar-brand img {
+      height: 30px;
+      width: 130px;
+  }
 
+}
+@media (max-width: 576px) {
+  .user-btn{
+    padding: 7px 14px;
+  }
+}
+@media (max-width: 992px) {
+  .search-section .form-control{
+      width: 250px !important;
+
+  }
+  .date-time-section{
+    font-size: 15px;
+  }
+  .protector{
+    width: 2px;
+    height: 25px;
+    background: #a0a3bd;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 319px) {
+  .user-btn{
+    margin-top: 10px;
+  }
+}
 
 
 
