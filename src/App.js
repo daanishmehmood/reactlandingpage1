@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from './App_images/Logo.png';
 // import user from './App_images/user-image.svg';
 import list from './App_images/List.png';
@@ -134,8 +133,8 @@ function App() {
      <p className='text-center'>Save money by splitting costs with others for group fitness and sports training</p>
      <h2 className='text-center my-5 fs-30 fw-700'>How splitMart works</h2>
      <div className="row">
-      <div className="col-lg-6">
-        <div className="coaching-center">
+      <div className="col-lg-6 coaching-b">
+        <div className="coaching-center ">
          <h4 className='fs-24 fw-700'>Need training or coaching</h4>
          <div className="coaching-options d-flex">
           <div className="service-icon"><img src={search} alt="" /></div>
@@ -161,7 +160,7 @@ function App() {
          <div className='primary-btn w-100 fs-18 pointer'><img src={search} alt="" />Book</div>
         </div>
       </div>
-      <div className="col-lg-6">
+      <div className="col-lg-6 ">
         <div className="coaching-center">
          <h4 className='fs-24 fw-700'>Need training or coaching</h4>
          <div className="coaching-options d-flex">
@@ -191,7 +190,7 @@ function App() {
      </div>
      <h3 className='text-center my-5 fs-30 fw-700'>SplitMart for your fitness and sports training needs</h3>
              <div className="row">
-              <div className="col-lg-4 mb-4">
+              <div className="col-lg-4 mb-4 ">
                 <div className="box-img">
                   <img src={box} alt="" />
                   <div className='list-text'>Pilates</div>
@@ -230,7 +229,7 @@ function App() {
              </div>
      <h3 className='text-center my-5 fs-30 fw-700'>Split the costs, get on track, and get results</h3>
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-4 coaching-b">
           <div className="card br-20">
   <img src={card} className="card-img-top br-t" alt="..."/>
   <div className="card-body bg-c br-b">
@@ -243,7 +242,7 @@ function App() {
   </div>
 </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 coaching-b">
           <div className="card br-20">
   <img src={card} className="card-img-top br-t" alt="..."/>
   <div className="card-body bg-c br-b">
@@ -256,7 +255,7 @@ function App() {
   </div>
 </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 coaching-b ">
           <div className="card br-20">
   <img src={card} className="card-img-top br-t" alt="..."/>
   <div className="card-body bg-c br-b">
@@ -272,7 +271,7 @@ function App() {
         </div>
      <h3 className='text-center my-5 fs-30 fw-700'>What they say about SplitMart</h3>
      <div className="row mb-5">
-      <div className="col-lg-4">
+      <div className="col-lg-4 coaching-b">
         <div className="review-card">
           <img src={comas} className='mb-4' alt="" />
           <p className='fs-18 fw-400 fc2'>It is so easy to join group or 1:1 sessions with SplitMart</p>
@@ -280,7 +279,7 @@ function App() {
           <p className='fs-15 fw-600 fc3'>Customer</p>
         </div>
       </div>
-      <div className="col-lg-4">
+      <div className="col-lg-4 coaching-b">
         <div className="review-card">
           <img src={comas} className='mb-4' alt="" />
           <p className='fs-18 fw-400 fc2'>It is so easy to join group or 1:1 sessions with SplitMart</p>
@@ -288,7 +287,7 @@ function App() {
           <p className='fs-15 fw-600 fc3'>Customer</p>
         </div>
       </div>
-      <div className="col-lg-4">
+      <div className="col-lg-4 coaching-b">
         <div className="review-card">
           <img src={comas} className='mb-4' alt="" />
           <p className='fs-18 fw-400 fc2'>It is so easy to join group or 1:1 sessions with SplitMart</p>
