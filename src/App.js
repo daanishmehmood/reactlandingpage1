@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import logo from './App_images/Logo.png';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import user from './App_images/user-image.svg';
 import list from './App_images/List.png';
 import search from './App_images/search.svg';
@@ -32,10 +32,14 @@ import describe from './App_images/message-square.png';
 import check from './App_images/check.svg';
 import earn from './App_images/dollar.svg';
 import add from './App_images/add.svg';
+// import Login from './components/login/Login';
+import Navbar from './components/Navbar/Navbar';
+import logo from './App_images/Logo.png';
 
 
 
 function App() {
+
   const [activeButton, setActiveButton] = useState(
     localStorage.getItem('activeButton') || 'btn-1' // Set default to 'btn-1'
   );
@@ -48,13 +52,12 @@ function App() {
 
   return (
  <>
-<nav className="navbar bg-body-tertiary py-3">
-  <div className="container">
-    <a className="navbar-brand" href='/'><img src={logo} alt="" /></a>
-      <button className="btn user-btn fs-13 fw-600 mt-sm-2 " type="submit">Login/Sign Up</button>
-  </div>
-</nav>
+<header>
+  <Navbar></Navbar>
+{/* <RouterProvider router={router} /> */}
+</header>
 {/* <hr /> */}
+{/* <Login/> */}
 <main>
      <div className="container group-section">
       <h1 className='text-center mt-md-5 d-none d-md-block'>Join <span className='fs-italic text-primary '>group</span> or 1:1 sessions near you for fitness and sports training</h1>
