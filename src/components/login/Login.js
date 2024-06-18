@@ -1,9 +1,15 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom';
 import './login.css'
 import login from '../assets/login.png';
 import logo from '../assets/Logo.png';
 
 const Login = () => {
+  const user = /* get the user from your auth state */ null;
+  if (user !== null) {
+    return <Navigate to="/" replace />;
+  }
+
   return (
     < >
       <div className="row">
