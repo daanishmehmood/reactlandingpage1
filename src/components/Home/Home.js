@@ -1,5 +1,6 @@
 // import React from 'react'
 import './Home.css'
+// import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import list from '../assets/List.png';
 import search from '../assets/search.svg';
@@ -44,7 +45,7 @@ const Home = () => {
       <div className="catagories my-md-5 my-sm-3">
         <ul className='pl-0'>
           <li>
-            <a href="/" 
+            <a href='/'
             className={` ${activeButton === 'btn-1' ? 'active' : ''}`}
             onClick={() => handleClick('btn-1')}
             ><span><img src={list} alt="" /></span><span className='d-none d-md-block'>All</span></a>
